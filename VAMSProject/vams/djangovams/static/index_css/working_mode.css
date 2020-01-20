@@ -1,0 +1,219 @@
+html{ 
+    height:100%;
+    margin:0; 
+}
+
+body{ 
+    margin:0; 
+    height:100%;
+    overflow: hidden;
+} 
+
+
+.text{
+    margin-top: 0px;
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.title{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left:40%;
+    top:10px;
+}
+
+.num{
+    font-size: 15px;
+}
+
+/* 设置图形界面大小220*225 */
+#wearing_hat, #linger, #intruder{
+    width: 250px;
+    height: 215px;
+}
+
+
+#main{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.introduction{
+    width: 100%;
+    height: 8%;
+}
+
+#title_background{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+/* 上面的introduction的左图 */
+#left_img{
+    float: left;
+    width: 300px;
+    position: absolute;
+    top:40px;
+    left:35px;
+}
+/* 
+.zhihui{
+    position: absolute;
+    top:10px;
+    left:35px;
+    color: antiquewhite;
+} */
+
+/* 上面的introduction的右图 */
+#right_img{
+    float: right;
+    width: 300px;
+    position: absolute;
+    top:40px;
+    right:30px;
+}
+
+
+.left_section{
+    position: absolute;
+    top:10%;
+    float: left;
+    left:10px;
+    width: 275px;
+    height: 94%;
+}
+
+#pic_frame{
+    width: 275px;
+    height: 93%;
+    margin: 10px;
+}
+
+#pic_frame_2{
+    width: 350px;
+    height: 94%;
+}
+
+.block_1{
+    position: absolute;
+    left:8%;
+    top:4%;
+}
+
+.block_2{
+    position: absolute;
+    left:7px;
+    top:3%;
+}
+
+#map{
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.right_section{
+    position: absolute;
+    top:12%;
+    right: 30px;
+    float: right;
+    height: 92%;
+    width: 350px;
+}
+
+/* 使得两个div并排显示 */
+
+.flex-container,.camera_flex{
+    display: flex;
+}
+
+.camera_flex{
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  /* 使视频居中 */
+}
+
+.camera_flex > div{
+    margin: 5px;
+}
+
+.area{
+    flex: 6;
+}
+
+.date{
+    flex: 7;
+}
+
+.event{
+    flex: 7;
+    text-align: right;
+}
+
+/* flex: flex-grow,flex-shrink, flex-basis */
+
+#alert_video{
+    text-align: center;
+}
+
+.piclass{
+    position: absolute;
+    top:10px;
+    height: 100%;
+    right: 15px;
+}
+
+marquee div{
+    color:white;
+    font-size: 16px;
+}
+
+.bs_frame{
+    position: absolute;
+    bottom:11%;
+}
+/* 使用flex box制作底下的可视化界面 */
+.bs_img{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.bottomSection{
+    position: absolute;
+    top:88%;
+    left:30%;
+}
+
+/* nav 代表施工一和施工二 */
+.nav{   
+    display: flex;
+    width :200px;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.nav .whole_img{
+    position: absolute;
+    top:13%;
+    left:20%;
+}
+
+
+.flex-container{
+    background-color: red;
+}
+
+.flex-container:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+

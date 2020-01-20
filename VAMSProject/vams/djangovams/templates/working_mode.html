@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>主页</title>
+
+    <!-- 引入 echarts.js -->
+    <script src="{% static 'internal_lib/echarts.min.js' %}"></script>
+    <script src="{% static 'internal_lib/echarts.common.min.js' %}"></script>
+    <script src="{% static 'internal_lib/echarts.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'internal_lib/echarts-gl.min.js' %}"></script>
+    
+    <!-- 引入高德地图.js-->
+    <script language="javascript"
+        src="https://webapi.amap.com/maps?v=1.4.15&key=f902ff6a2932069b026727828b28c5e4&plugin=AMap.ControlBar"></script>
+
+    <!-- 导入 css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'index_css/working_mode.css' %}">
+
+    <!-- 导入 时间.js -->
+    <script src="{% static 'index_js/time.js' %}"></script>
+
+    <!-- 导入jquery.js -->
+    <script src = "{% static 'internal_lib/jquery.js' %}"></script>
+
+    <!-- 预加载监控视频 -->
+    <link rel="preload" href="http://172.16.138.39:8080" as="document" type="video/mp4">
+
+</head>
+<body>
+
+    <div id="main">
+
+       
+        <!-- 地图页面 -->
+        <div id="map"></div>
+        <script type="text/javascript" src="{% static 'index_js/map.js' %}"></script>
+
+    </div>
+    
+
+</body>
+
+</html>
